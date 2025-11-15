@@ -1,0 +1,127 @@
+% Implementation of catppuccin colors from : https://catppuccin.com 
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{catppuccin}[2025/11/14 Catppuccin]
+
+\RequirePackage{xcolor}
+
+% https://catppuccin.com/palette/
+
+\DeclareOption{latte}{%
+    \definecolor{rosewater}{HTML}{dc8a78}
+    \definecolor{flamingo}{HTML}{dd7878}
+    \definecolor{pink}{HTML}{ea76cb}
+    \definecolor{mauve}{HTML}{8839ef}
+    \definecolor{red}{HTML}{d20f39}
+    \definecolor{maroon}{HTML}{e64553}
+    \definecolor{peach}{HTML}{fe640b}
+    \definecolor{yellow}{HTML}{df8e1d}
+    \definecolor{green}{HTML}{40a02b}
+    \definecolor{teal}{HTML}{179299}
+    \definecolor{sky}{HTML}{04a5e5}
+    \definecolor{sapphire}{HTML}{209fb5}
+    \definecolor{blue}{HTML}{1e66f5}
+    \definecolor{lavender}{HTML}{7287fd}
+    \definecolor{text}{HTML}{4c4f69}
+    \definecolor{subtext1}{HTML}{5c5f77}
+    \definecolor{subtext0}{HTML}{6c6f85}
+    \definecolor{overlay2}{HTML}{7c7f93}
+    \definecolor{overlay1}{HTML}{8c8fa1}
+    \definecolor{overlay0}{HTML}{9ca0b0}
+    \definecolor{surface2}{HTML}{acb0be}
+    \definecolor{surface1}{HTML}{bcc0cc}
+    \definecolor{surface0}{HTML}{ccd0da}
+    \definecolor{base}{HTML}{eff1f5}
+    \definecolor{mantle}{HTML}{e6e9ef}
+    \definecolor{crust}{HTML}{dce0e8}
+}
+
+\DeclareOption{frappe}{%
+    
+    \definecolor{rosewater}{HTML}{f2d5cf}
+    \definecolor{flamingo}{HTML}{eebebe}
+    \definecolor{pink}{HTML}{f4b8e4}
+    \definecolor{mauve}{HTML}{ca9ee6}
+    \definecolor{red}{HTML}{e78284}
+    \definecolor{maroon}{HTML}{ea999c}
+    \definecolor{peach}{HTML}{ef9f76}
+    \definecolor{yellow}{HTML}{e5c890}
+    \definecolor{green}{HTML}{a6d189}
+    \definecolor{teal}{HTML}{81c8be}
+    \definecolor{sky}{HTML}{99d1db}
+    \definecolor{sapphire}{HTML}{85c1dc}
+    \definecolor{blue}{HTML}{8caaee}
+    \definecolor{lavender}{HTML}{babbf1}
+    \definecolor{text}{HTML}{c6d0f5}
+    \definecolor{subtext1}{HTML}{b5bfe2}
+    \definecolor{subtext0}{HTML}{a5adce}
+    \definecolor{overlay2}{HTML}{949cbb}
+    \definecolor{overlay1}{HTML}{838ba7}
+    \definecolor{overlay0}{HTML}{737994}
+    \definecolor{surface2}{HTML}{626880}
+    \definecolor{surface1}{HTML}{51576d}
+    \definecolor{surface0}{HTML}{414559}
+    \definecolor{base}{HTML}{303446}
+    \definecolor{mantle}{HTML}{292c3c}
+    \definecolor{crust}{HTML}{232634}
+}
+
+\DeclareOption{macchiato}{%
+    \definecolor{rosewater}{HTML}{f4dbd6}
+    \definecolor{flamingo}{HTML}{f0c6c6}
+    \definecolor{pink}{HTML}{f5bde6}
+    \definecolor{mauve}{HTML}{c6a0f6}
+    \definecolor{red}{HTML}{ed8796}
+    \definecolor{maroon}{HTML}{ee99a0}
+    \definecolor{peach}{HTML}{f5a97f}
+    \definecolor{yellow}{HTML}{eed49f}
+    \definecolor{green}{HTML}{a6da95}
+    \definecolor{teal}{HTML}{8bd5ca}
+    \definecolor{sky}{HTML}{91d7e3}
+    \definecolor{sapphire}{HTML}{7dc4e4}
+    \definecolor{blue}{HTML}{8aadf4}
+    \definecolor{lavender}{HTML}{b7bdf8}
+    \definecolor{text}{HTML}{cad3f5}
+    \definecolor{subtext1}{HTML}{b8c0e0}
+    \definecolor{subtext0}{HTML}{a5adcb}
+    \definecolor{overlay2}{HTML}{939ab7}
+    \definecolor{overlay1}{HTML}{8087a2}
+    \definecolor{overlay0}{HTML}{6e738d}
+    \definecolor{surface2}{HTML}{5b6078}
+    \definecolor{surface1}{HTML}{494d64}
+    \definecolor{surface0}{HTML}{363a4f}
+    \definecolor{base}{HTML}{24273a}
+    \definecolor{mantle}{HTML}{1e2030}
+    \definecolor{crust}{HTML}{181926}
+}
+
+\DeclareOption{mocha}{%
+    \definecolor{rosewater}{HTML}{f5e0dc}
+    \definecolor{flamingo}{HTML}{f2cdcd}
+    \definecolor{pink}{HTML}{f5c2e7}
+    \definecolor{mauve}{HTML}{cba6f7}
+    \definecolor{red}{HTML}{f38ba8}
+    \definecolor{maroon}{HTML}{eba0ac}
+    \definecolor{peach}{HTML}{fab387}
+    \definecolor{yellow}{HTML}{f9e2af}
+    \definecolor{green}{HTML}{a6e3a1}
+    \definecolor{teal}{HTML}{94e2d5}
+    \definecolor{sky}{HTML}{89dceb}
+    \definecolor{sapphire}{HTML}{74c7ec}
+    \definecolor{blue}{HTML}{89b4fa}
+    \definecolor{lavender}{HTML}{b4befe}
+    \definecolor{text}{HTML}{cdd6f4}
+    \definecolor{subtext1}{HTML}{bac2de}
+    \definecolor{subtext0}{HTML}{a6adc8}
+    \definecolor{overlay2}{HTML}{9399b2}
+    \definecolor{overlay1}{HTML}{7f849c}
+    \definecolor{overlay0}{HTML}{6c7086}
+    \definecolor{surface2}{HTML}{585b70}
+    \definecolor{surface1}{HTML}{45475a}
+    \definecolor{surface0}{HTML}{313244}
+    \definecolor{base}{HTML}{1e1e2e}
+    \definecolor{mantle}{HTML}{181825}
+    \definecolor{crust}{HTML}{11111b}
+}
+
+\DeclareOption*{\PackageWarning{latexppuccin}{Unknown ‘\CurrentOption’}}
+\ProcessOptions\relax
